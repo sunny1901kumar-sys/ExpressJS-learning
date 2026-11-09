@@ -2,6 +2,7 @@
 const express = require("express");
 const router = express.Router();
 
+app.use("/blogs", blog);
 // GET - All Blogs
 router.get("/", (req, res) => {
     res.send("All Blogs");
